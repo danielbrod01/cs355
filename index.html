@@ -1,20 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>CS 355 Home Page</title>
+
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="./css/dashboard-styles.css">
     </head>
     <body>
-        <h1>Hey! I'm Daniel Rodriguez and this is my home page for CS 355</h1>
-        <section id="assignments">
-            <h3>Assignments</h3>
-            <ul>
-                <li>
-                    <a href="./weather/weather.html">Weather App</a>
+        <!-- ************************** Navbar ********************************-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Home</a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Assignments</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="./weather/weather.html">Weather App</a>
+                      <a class="dropdown-item" href="./LL/portfolio.html">LinkedIn Learning CSS Course Project</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">More soon</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="./LL/portfolio.html">LinkedIn Learning CSS Course Project</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/danielbrod01/cs355" target="_blank">GitHub Repo</a>
                 </li>
-            </ul>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- ************ Introduction  ************** -->
+        <header>
+            <div class="content-wrap">
+                <h1>Hello! I'm Daniel Rodriguez</h1>
+                <h3>This is my home page for CS 355 material</h3>
+            </div>
+        </header>
+
+        <!-- ************ Assignments  ************** -->
+        <section class="assignments">
+            <div class="content-wrap featured">
+                <h2>Featured Assignments</h2>
+            </div>
+            <div class="content-wrap divider container-fluid">
+                <div class="row">
+                    <!-- Assignment 1 -->
+                    <section class="assignment-item col-md">
+                        <img src="./dashboard-images/weather-thumbnail.PNG" alt="Weather App screenshot" class="border border-dark rounded">
+                        <a href="./weather/weather.html" target="_blank"><h3>Weather App</h3></a>
+                        <p>In the coming weeks, we are going to create a dynamic weather app using HTML, CSS, Javascript and jQuery. The goal of Part 1 is to put what I have learned about HTML and CSS thus far to practice in creating the basis of my app.</p>
+                    </section>
+
+                    <!-- Assignment 2 -->
+                    <section class="assignment-item col-md">
+                        <img src="./dashboard-images/ll-portfolio.PNG" alt="LinkedIn Learning portfolio website" class="border border-dark rounded">
+                        <a href="./LL/portfolio.html" target="_blank"><h3>LinkedIn Learning CSS Course Project</h3></a>
+                        <p>This <i>LinkedIn Learning CSS Essentials</i> course walks through with us the process of styling a portfolio with CSS using knowledge learned from the course.</p>
+                    </section>
+                </div>
+            </div>
         </section>
+
+        <!--Bootstrap JS Bundle with Popper-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
