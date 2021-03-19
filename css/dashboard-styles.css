@@ -17,7 +17,7 @@ h1 {
 }
 
 .content-wrap {
-    max-width: 800px;
+    max-width: 1600px;
     width: 85%;
     margin: 0 auto;
     padding: 20px 0;
@@ -48,7 +48,7 @@ header {
 
 .assignment-item img {
     width: auto;
-    height: 120px;
+    height: 200px;
     padding: 5px;
     margin-bottom: 20px;
 }
