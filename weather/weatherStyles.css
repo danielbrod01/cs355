@@ -17,6 +17,7 @@ h3 {
 span {
     font-size: 6rem;
 }
+
 .container {
     max-width: 550px;
     height: 100vh;
@@ -28,10 +29,18 @@ span {
     padding: 25px 5px;
 }
 
-.degrees {
+.degrees, .degrees-feels {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     margin-left: 2rem;
+}
+
+#feels-like-symbol {
+    font-size: 2rem;
+}
+
+#desc {
+    margin-top: 25px;
 }
 
