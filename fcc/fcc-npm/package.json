@@ -1,0 +1,24 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Daniel Rodriguez",
+	"version": "1.2.0",
+	"description": "exercise with working with npm and package.json files",
+	"keywords": [
+		"descriptive",
+		"related",
+		"words",
+		"freecodecamp"
+	],
+	"dependencies": {
+		"express": "^4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	},
+	"license": "MIT"
+}
